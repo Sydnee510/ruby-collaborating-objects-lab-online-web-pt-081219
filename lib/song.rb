@@ -24,20 +24,20 @@ end
     song.artist_name = artist
     song
   end
-  def artist_name=(name)
-    self.artist = Artist.find_or_create_by_name(name)
- self.artist.add_song(self)
-  end
+#   def artist_name=(name)
+#     self.artist = Artist.find_or_create_by_name(name)
+# self.artist.add_song(self)
+#   end
    
   # other methods
  
-  # def artist_name=(name)
-  #   if (self.artist.nil?)
-  #     self.artist = Artist.new(name)
-  #   else
-  #     self.artist.name = name
-  #   end
-  # end
+  def artist_name=(name)
+    if (self.artist.nil?)
+      self.artist = Artist.new(name)
+    else
+      self.artist.name = name
+    end
+  end
 end
 # class Song
 #   attr_accessor :title
