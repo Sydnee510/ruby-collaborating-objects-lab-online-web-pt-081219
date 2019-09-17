@@ -8,10 +8,10 @@ class Artist
    #save
   end
   def songs 
-   @song
+   @songs
    # Song.all.select do |song|
     #  song.artist == self
-  end
+ # end
 end
    def add_song(song)
     self.songs << song
