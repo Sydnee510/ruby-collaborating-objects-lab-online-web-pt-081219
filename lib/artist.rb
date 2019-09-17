@@ -31,16 +31,16 @@ end
     end
   end
   
-  # def self.find(name)
-  #   @@all.find do |artist|
-  #     artist.name == name
-  #   end
-  # end
-  # def self.create(name)
-  #   artist = self.new(name)
-  #   @@all << artist
-  #   artist
-  # end
+  def self.find(name)
+    @@all.find do |artist|
+      artist.name == name
+    end
+  end
+  def self.create(name)
+    artist = self.new(name)
+    @@all << artist
+     artist
+   end
   def print_songs
     puts @songs.map {|x| x.name}
   end
