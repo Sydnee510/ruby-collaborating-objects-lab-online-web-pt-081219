@@ -41,7 +41,7 @@ end
   #   @@all << artist
   #   artist
   # end
-  def print_songs()
+  def print_songs
     puts @songs.map {|x| x.name}
   end
 end 
