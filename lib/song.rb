@@ -32,11 +32,7 @@ end
   # other methods
  
   def artist_name=(name)
-   # if (self.artist.nil?)
-      self.artist = Artist.new(name)
-  #  else
-      self.artist.name = name
-   # end
+    artist = find_or_create_by_name
   end
 end
 # class Song
