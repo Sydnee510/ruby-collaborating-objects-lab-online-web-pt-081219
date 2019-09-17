@@ -3,9 +3,9 @@ class Artist
   @@all = []
   def initialize(name)
     @name = name 
-   # @@all << self
-    @songs = []
-   save
+    @@all << self
+    #@songs = []
+   #save
   end
   def songs 
     Song.all.select do |song|
